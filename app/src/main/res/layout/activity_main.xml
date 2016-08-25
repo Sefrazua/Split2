@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.split.split.MainActivity">
+
+    <TextView
+    android:id="@+id/Usuario"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/Usuario"
+        android:textSize="20sp"
+        android:gravity="start" />
+
+    <EditText
+        android:id="@+id/IngresaUsuario"
+        android:layout_width="135sp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/Clave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Clave"
+        android:textSize="20sp"
+        android:gravity="start" />
+
+    <EditText
+        android:id="@+id/IngresaClave"
+        android:layout_width="135sp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+              />
+
+    <Button
+        android:id="@+id/Ingresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/IngresaBoton"
+        />
+
+</LinearLayout>

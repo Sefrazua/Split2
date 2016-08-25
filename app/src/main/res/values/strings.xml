@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Split</string>
+    <string name="IngresaBoton">Ingresar</string>
+    <string name="Usuario">Usuario</string>
+    <string name="IngresaUsuario">Ingresa tu Usuario</string>
+    <string name="Clave">Clave</string>
+    <string name="IngresaClave">Ingresa tu Clave</string>
+    </resources>

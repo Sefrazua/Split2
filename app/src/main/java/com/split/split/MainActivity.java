@@ -1,5 +1,6 @@
 package com.split.split;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //definiendo el listener del boton y la variable boton del ingresar
         Boton = (Button) findViewById(R.id.Ingresar);
         Boton.setOnClickListener(this);
         // ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -39,9 +40,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             String Usuario = ((EditText)findViewById(R.id.IngresaUsuario)).getText().toString();
             String Clave = ((EditText)findViewById(R.id.IngresaClave)).getText().toString();
             if (Usuario.equals("Seba") && Clave.equals("seba741")) {
-
+                Intent Login = new Intent(MainActivity.this,Inicio.class);
+                startActivity(Login);
             } else {
-                Toast.makeText(getApplicationContext(), "usuairo malo", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Error al Ingresar", Toast.LENGTH_SHORT).show();
 
             }
         }
